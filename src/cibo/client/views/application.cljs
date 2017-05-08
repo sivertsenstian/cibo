@@ -4,7 +4,6 @@
            [cibo.client.views.recipes.show      :as show-recipe]
            [cibo.client.views.menus.index       :as menus]
            [cibo.client.views.menus.show        :as show-menu]
-
            [cibo.client.html.application.header :as application-header]))
 
 (defn- render-view [view]

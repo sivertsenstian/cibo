@@ -1,13 +1,13 @@
 (defproject cibo "0.1.0"
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.229"]
+                 [org.clojure/clojurescript "1.9.521"]
                  [reagent "0.6.0"]
                  [re-frame "0.9.2"]
                  [secretary "1.2.3"]
-                 [compojure "1.5.0"]
+                 [compojure "1.6.0"]
                  [yogthos/config "0.8"]
-                 [cljs-ajax "0.5.8"]
-                 [ring "1.4.0"]
+                 [cljs-ajax "0.5.9"]
+                 [ring "1.6.0"]
                  [ring-middleware-format "0.7.2"]
                  [korma "0.4.3"]
                  [org.xerial/sqlite-jdbc "3.16.1"]]
@@ -25,8 +25,8 @@
 
   :profiles
   {:dev
-   {:dependencies [[binaryage/devtools "0.9.2"]]
-    :plugins      [[lein-figwheel "0.5.9"]]}}
+   {:dependencies [[binaryage/devtools "0.9.4"]]
+    :plugins      [[lein-figwheel "0.5.10"]]}}
 
   :cljsbuild
   {:builds

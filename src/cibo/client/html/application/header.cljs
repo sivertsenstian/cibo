@@ -4,7 +4,7 @@
 (defn render []
   [:div.ui.secondary.pointing.menu
    [:span {:on-click #(routing/navigate! "/")}
-    [:img {:height 30 :src "/img/icon.png"}]]
+    [:img {:height 35 :src "/img/icon.png"}]]
    [:a.item {:on-click #(routing/navigate! "/recipes")} "recipes"]
    [:a.item {:on-click #(routing/navigate! "/menus")} "menus"]
    [:div.right.menu

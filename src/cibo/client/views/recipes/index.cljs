@@ -1,11 +1,13 @@
 (ns cibo.client.views.recipes.index
- (:require [re-frame.core       :as re-frame]
-           [cibo.client.routing :as routing]))
+ (:require [re-frame.core                  :as re-frame]
+           [cibo.client.routing            :as routing]
+           [cibo.client.html.recipe.create :as create-recipe]))
 
 (defn render []
   (let [recipes (re-frame/subscribe [:recipes])]
     (fn []
       [:div
+       [create-recipe/render]
        [:table.ui.celled.table
         [:thead>tr
          [:th "#"]
